@@ -1,8 +1,6 @@
-import "./App.css";
-
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-primary">
       <h1 className="text-heading font-firaCode text-coral">hello world</h1>
     </div>
   );
