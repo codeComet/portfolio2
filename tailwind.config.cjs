@@ -10,6 +10,7 @@ module.exports = {
     },
     colors: {
       body: "#010C15", //bg-body
+      border: "#1E2D3D",
       primary: "#011627",
       accent: "#FEA55F", //orange
       blue: "#4D5BCE", //blue
@@ -17,6 +18,7 @@ module.exports = {
       coral: "#E99287",
       bodyText: "#607B96",
       button: "#1C2B3A",
+      white: "#fff",
     },
     fontSize: {
       heading: "62px",
