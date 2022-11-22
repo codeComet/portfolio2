@@ -48,7 +48,7 @@ const Navbar = () => {
             <span class="sr-only">Open main menu</span>
             <HiOutlineCode className="text-white font-label font-medium" />
           </button>
-          {/* <div className="hidden md:block hover:cursor-pointer"></div> */}
+          <div className="hidden md:block w-full">hello</div>
           {/* Contact */}
           <div className="flex-none items-center justify-end whitespace-nowrap text-right xl:w-[10%] lg:w-[15%]  p-3 hidden lg:flex border border-border border-y-0 border-r-0">
             <Link to="/">
