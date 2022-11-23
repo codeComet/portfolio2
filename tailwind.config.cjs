@@ -23,7 +23,7 @@ module.exports = {
     fontSize: {
       heading: "62px",
       subheading: "32px",
-      body: "18px",
+      bodyFont: "18px",
       label: "16px",
       code: "14px",
     },
@@ -33,6 +33,9 @@ module.exports = {
     extend: {
       borderRadius: {
         8: "8px",
+      },
+      backgroundImage: {
+        "hero-bg": "url('./src/assets/bg.png')",
       },
     },
   },

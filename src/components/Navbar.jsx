@@ -11,14 +11,14 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav class="bg-primary border border-border px-3 sm:px-4 rounded-t-8 text-bodyText">
+      <nav className="bg-primary border border-border px-3 sm:px-4 rounded-t-8 text-bodyText">
         <div className="flex items-center justify-between px-3 md:px-0  ">
           {/* Logo section */}
-          <di className="flex-none xl:w-[10%] lg:w-[12%]  text-left p-3 pl-0 border-border">
+          <div className="flex-none xl:w-[10%] lg:w-[12%]  text-left p-3 pl-0 border-border">
             <Link to="/">
               <p className="text-label font-medium md:text-code">_bishal</p>
             </Link>
-          </di>
+          </div>
           {/* Menu section */}
           <div className="items-center flex-auto justify-start xl:w-[80%] lg:w-[73%]  border border-border border-y-0 border-r-0 hidden lg:flex">
             <Link to="/" className="pr-[60px]  p-3 no-underline">
@@ -46,10 +46,10 @@ const Navbar = () => {
           {/* Mobile menu */}
           <button
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             onClick={handleToggle}
           >
-            <span class="sr-only">Open main menu</span>
+            <span className="sr-only">Open main menu</span>
             <HiOutlineCode className="text-white font-label font-medium" />
           </button>
           <div
@@ -57,13 +57,13 @@ const Navbar = () => {
               showNav ? "block" : "hidden"
             }`}
           >
-            <div class="w-full pt-4 px-4 text-right">
+            <div className="w-full pt-4 px-4 text-right">
               <button
                 type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 onClick={() => setShowNav(false)}
               >
-                <span class="sr-only">Close main menu</span>
+                <span className="sr-only">Close main menu</span>
                 <MdClose className="text-white font-label font-medium" />
               </button>
             </div>
