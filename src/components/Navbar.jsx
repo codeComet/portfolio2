@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav class="bg-primary border border-border px-3 sm:px-4 rounded text-bodyText">
+      <nav class="bg-primary border border-border px-3 sm:px-4 rounded-t-8 text-bodyText">
         <div className="flex items-center justify-between px-3 md:px-0  ">
           {/* Logo section */}
           <di className="flex-none xl:w-[10%] lg:w-[12%]  text-left p-3 pl-0 border-border">
