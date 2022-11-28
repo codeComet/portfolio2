@@ -10,8 +10,8 @@ const Navbar = () => {
     setShowNav((prev) => !prev);
   };
   return (
-    <div>
-      <nav className="bg-primary border border-border px-3 sm:px-4 rounded-t-8 text-bodyText">
+    <div className="z-10">
+      <nav className="bg-primary border border-border px-3 sm:px-4 rounded-t-8 text-bodyText ">
         <div className="flex items-center justify-between px-3 md:px-0  ">
           {/* Logo section */}
           <div className="flex-none xl:w-[10%] lg:w-[12%]  text-left p-3 pl-0 border-border">

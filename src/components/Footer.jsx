@@ -4,7 +4,7 @@ import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="text-white text-subheading bg-primary border border-border rounded-b-8">
+    <div className="text-white text-subheading bg-primary border border-border rounded-b-8 z-10">
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-start w-10/12  ">
           <div className="w-24 flex items-center  border border-border border-y-0 border-l-0 p-3">
