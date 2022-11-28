@@ -10,6 +10,12 @@
   font-family: "Fira Code", monospace;
 }
 
+.Typewriter__wrapper {
+  color: #4d5bce;
+  font-size: 32px;
+  line-height: 42px;
+}
+
 @media screen and (max-width: 992px) {
   #root {
     padding: 1.2rem;

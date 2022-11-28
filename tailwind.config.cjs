@@ -21,7 +21,7 @@ module.exports = {
       white: "#fff",
     },
     fontSize: {
-      heading: "62px",
+      heading: ["62px", "81px"],
       subheading: "32px",
       bodyFont: "18px",
       label: "16px",
