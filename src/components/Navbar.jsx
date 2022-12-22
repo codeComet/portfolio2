@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HiOutlineCode } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 
@@ -15,33 +15,45 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-3 md:px-0  ">
           {/* Logo section */}
           <div className="flex-none xl:w-[10%] lg:w-[12%]  text-left p-3 pl-0 border-border">
-            <Link to="/">
+            <NavLink to="/">
               <p className="text-label font-medium md:text-code">_bishal</p>
-            </Link>
+            </NavLink>
           </div>
           {/* Menu section */}
           <div className="items-center flex-auto justify-start xl:w-[80%] lg:w-[73%]  border border-border border-y-0 border-r-0 hidden lg:flex">
-            <Link to="/" className="pr-[60px]  p-3 no-underline">
+            <NavLink
+              to="/"
+              className="pr-[60px]  p-3 no-underline"
+              style={({ isActive }) => ({
+                borderBottom: isActive ? "2px solid #FEA55F" : "none",
+              })}
+            >
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code">
                 _hello
               </p>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
               className="pr-[60px] border-y-0 border border-border p-3 no-underline"
+              style={({ isActive }) => ({
+                borderBottom: isActive ? "2px solid #FEA55F" : "none",
+              })}
             >
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code">
                 _about-me
               </p>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/projects"
               className="pr-[60px] border-y-0 border border-border p-3 no-underline"
+              style={({ isActive }) => ({
+                borderBottom: isActive ? "2px solid #FEA55F" : "none",
+              })}
             >
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code">
                 _projects
               </p>
-            </Link>
+            </NavLink>
           </div>
           {/* Mobile menu */}
           <button
@@ -69,7 +81,7 @@ const Navbar = () => {
             </div>
 
             <div className="w-full text-center">
-              <Link
+              <NavLink
                 to="/"
                 className="mb-4 p-3 no-underline"
                 onClick={() => showNav(false)}
@@ -77,8 +89,8 @@ const Navbar = () => {
                 <p className=" ease-in-out duration-300 text-[24px] font-medium text-white">
                   _hello
                 </p>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/about"
                 className="mb-4 p-3 no-underline"
                 onClick={() => showNav(false)}
@@ -86,8 +98,8 @@ const Navbar = () => {
                 <p className=" ease-in-out duration-300 text-[24px] font-medium text-white">
                   _about-me
                 </p>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/projects"
                 className="mb-4 p-3 no-underline"
                 onClick={() => showNav(false)}
@@ -95,16 +107,16 @@ const Navbar = () => {
                 <p className=" ease-in-out duration-300 text-[24px] font-medium text-white">
                   _projects
                 </p>
-              </Link>
+              </NavLink>
             </div>
           </div>
           {/* Contact */}
           <div className="flex-none items-center justify-end whitespace-nowrap text-right xl:w-[10%] lg:w-[15%]  p-3 hidden lg:flex border border-border border-y-0 border-r-0">
-            <Link to="/">
+            <NavLink to="/">
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code ">
                 _contact-me
               </p>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </nav>

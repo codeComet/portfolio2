@@ -3,10 +3,20 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
+      // '2xl': {'max': '1535px'},
+      // // => @media (max-width: 1535px) { ... }
+
+      xl: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 992px) { ... }
+
+      md: "600px",
+      // => @media (min-width: 600px) { ... }
+
+      sm: { max: "600px" },
+      // => @media (max-width: 600px) { ... }
     },
     colors: {
       body: "#010C15", //bg-body
