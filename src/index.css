@@ -8,6 +8,7 @@
   margin: 0;
   padding: 3rem;
   font-family: "Fira Code", monospace;
+  overflow: hidden;
 }
 
 .Typewriter__wrapper {
