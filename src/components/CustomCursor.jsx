@@ -49,7 +49,7 @@ const CustomCursor = () => {
 
   return (
     <motion.div
-      className={`fixed top-0 left-0 `}
+      className={`fixed top-0 left-0 sm:hidden`}
       style={style}
       variants={variants}
       animate="default"

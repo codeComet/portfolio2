@@ -26,6 +26,7 @@ const Navbar = () => {
               className="pr-[60px]  p-3 no-underline"
               style={({ isActive }) => ({
                 borderBottom: isActive ? "2px solid #FEA55F" : "none",
+                color: isActive ? "white" : "#607B96",
               })}
             >
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code">
@@ -37,6 +38,7 @@ const Navbar = () => {
               className="pr-[60px] border-y-0 border border-border p-3 no-underline"
               style={({ isActive }) => ({
                 borderBottom: isActive ? "2px solid #FEA55F" : "none",
+                color: isActive ? "white" : "#607B96",
               })}
             >
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code">
@@ -48,6 +50,7 @@ const Navbar = () => {
               className="pr-[60px] border-y-0 border border-border p-3 no-underline"
               style={({ isActive }) => ({
                 borderBottom: isActive ? "2px solid #FEA55F" : "none",
+                color: isActive ? "white" : "#607B96",
               })}
             >
               <p className="hover:text-white ease-in-out duration-300 text-label font-medium md:text-code">
@@ -55,6 +58,7 @@ const Navbar = () => {
               </p>
             </NavLink>
           </div>
+
           {/* Mobile menu */}
           <button
             type="button"
