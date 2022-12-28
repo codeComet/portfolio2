@@ -4,10 +4,10 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="w-full h-auto px-64 flex items-center justify-center flex-wrap z-10">
-      <div className="w-1/2 mx-auto ">
+    <div className="w-full h-auto px-64 flex items-center justify-center flex-wrap z-10 sm:px-[1rem]">
+      <div className="w-1/2 mx-auto sm:w-full ">
         <p className="text-bodyFont text-white">Hey there! I'm</p>
-        <h1 className="text-heading text-white">Bishal</h1>
+        <h1 className="text-heading text-white">mark</h1>
         {/* <h2 className="text-subheading text-blue">&gt; Frontend Developer</h2> */}
         <Typewriter
           options={{
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2  bg-hero-bg bg-contain bg-center">
+      <div className="w-1/2  bg-hero-bg bg-contain bg-center sm:w-full">
         <VerticalSlider />
       </div>
     </div>

@@ -65,7 +65,7 @@ const Navbar = () => {
             <HiOutlineCode className="text-white font-label font-medium" />
           </button>
           <div
-            className={`flex flex-col items-center justify-between w-full absolute top-0 left-0 bg-body lg:hidden ${
+            className={`flex flex-col items-center justify-between w-full absolute top-0 left-0 bg-body lg:hidden z-20  ${
               showNav ? "block" : "hidden"
             }`}
           >
