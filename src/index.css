@@ -8,12 +8,27 @@
   margin: 0;
   padding: 3rem;
   font-family: "Fira Code", monospace;
+  overflow: hidden;
 }
 
 .Typewriter__wrapper {
   color: #4d5bce;
   font-size: 32px;
   line-height: 42px;
+}
+
+.Typewriter__cursor {
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .Typewriter__wrapper {
+    font-size: 20px;
+  }
+  .Typewriter__cursor {
+    font-size: 18px !important;
+  }
 }
 
 @media screen and (max-width: 992px) {

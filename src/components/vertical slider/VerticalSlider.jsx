@@ -1,5 +1,14 @@
 import React from "react";
 import "./slider.css";
+import img1 from "../../assets/1.png";
+import img2 from "../../assets/2.png";
+import img3 from "../../assets/3.png";
+import img4 from "../../assets/4.png";
+import img5 from "../../assets/5.png";
+import img6 from "../../assets/6.png";
+import img7 from "../../assets/7.png";
+import img8 from "../../assets/8.png";
+import img9 from "../../assets/9.png";
 
 const VerticalSlider = () => {
   return (
@@ -7,67 +16,31 @@ const VerticalSlider = () => {
       <div className="wrapper">
         <div className="carousel">
           <div className="carousel__item">
-            <div className="carousel__item-head">🐳</div>
-            <div className="carousel__item-body">
-              <p className="title">spouting whale</p>
-              <p>Unicode: U+1F433</p>
-            </div>
+            <img src={img1} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐋</div>
-            <div className="carousel__item-body">
-              <p className="title">whale</p>
-              <p>Unicode: U+1F40B</p>
-            </div>
+            <img src={img2} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐬</div>
-            <div className="carousel__item-body">
-              <p className="title">dolphin</p>
-              <p>Unicode: U+1F42C</p>
-            </div>
+            <img src={img3} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐟</div>
-            <div className="carousel__item-body">
-              <p className="title">fish</p>
-              <p>Unicode: U+1F41F</p>
-            </div>
+            <img src={img4} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐠</div>
-            <div className="carousel__item-body">
-              <p className="title">tropical fish</p>
-              <p>Unicode: U+1F420</p>
-            </div>
+            <img src={img5} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐡</div>
-            <div className="carousel__item-body">
-              <p className="title">blowfish</p>
-              <p>Unicode: U+1F421</p>
-            </div>
+            <img src={img6} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🦈</div>
-            <div className="carousel__item-body">
-              <p className="title">shark</p>
-              <p>Unicode: U+1F988</p>
-            </div>
+            <img src={img7} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐙</div>
-            <div className="carousel__item-body">
-              <p className="title">octopus</p>
-              <p>Unicode: U+1F419</p>
-            </div>
+            <img src={img8} alt="img1" />
           </div>
           <div className="carousel__item">
-            <div className="carousel__item-head">🐚</div>
-            <div className="carousel__item-body">
-              <p className="title">spiral shell</p>
-              <p>Unicode: U+1F41A</p>
-            </div>
+            <img src={img9} alt="img1" />
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="h-full flex flex-col justify-between bg-primary">
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <Home />
       <Footer />
