@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav className="bg-primary border border-border px-3 sm:px-4 rounded-t-8 text-bodyText ">
         <div className="flex items-center justify-between px-3 md:px-0  ">
           {/* Logo section */}
-          <div className="flex-none xl:w-[10%] lg:w-[12%]  text-left p-3 pl-0 border-border">
+          <div className="flex-none xl:w-[10%] lg:w-[13.5%]  text-left p-3 pl-0 border-border">
             <NavLink to="/">
               <p className="text-label font-medium md:text-code">_bishal</p>
             </NavLink>

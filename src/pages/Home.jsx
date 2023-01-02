@@ -1,10 +1,10 @@
 import React from "react";
-import { VerticalSlider } from "../components";
+import { Game, VerticalSlider } from "../components";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="w-full h-auto px-64 sm:px-5 flex items-center justify-center flex-wrap z-10">
+    <div className="w-full h-full px-64 sm:px-5 flex items-center justify-center flex-wrap z-10">
       <div className="w-1/2 mx-auto sm:w-full ">
         <p className="text-bodyFont text-white">Hey there! I'm</p>
         <h1 className="text-heading sm:text-[40px] sm:leading-normal text-white">
@@ -40,8 +40,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 sm:w-full sm:hidden  bg-hero-bg bg-contain bg-center">
+      <div className="w-1/2 sm:w-full sm:hidden bg-hero-bg bg-contain bg-center bg-no-repeat">
         <VerticalSlider />
+        {/* <Game /> */}
       </div>
     </div>
   );
