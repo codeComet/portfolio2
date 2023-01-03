@@ -4,7 +4,11 @@ export const ContentContext = createContext();
 
 export const ContentProvider = ({ children }) => {
   const [content, setContent] = useState({
-    bio: "bio text",
+    bio: `/*
+* hello world 
+* new line
+* new line again
+*/`,
   });
 
   return (

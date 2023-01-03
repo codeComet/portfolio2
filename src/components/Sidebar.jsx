@@ -70,7 +70,7 @@ const Sidebar = () => {
 
                         <AccordionBody className="px-3">
                           <div
-                            className="accordion-body text-bodyText pl-12"
+                            className="accordion-body text-bodyText pl-12 hover:cursor-pointer"
                             onClick={() =>
                               navigate({
                                 pathname: "/about/bio",
