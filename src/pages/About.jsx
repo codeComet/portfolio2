@@ -1,5 +1,6 @@
 import React from "react";
-import { Sidebar, SubNavbar, IconSidebar } from "../components";
+import { MdContentCopy } from "react-icons/md";
+import { Sidebar, SubNavbar, IconSidebar, Content } from "../components";
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
       </div>
       <div className="flex-auto w-[81%]">
         <SubNavbar />
+        <Content />
       </div>
     </div>
   );

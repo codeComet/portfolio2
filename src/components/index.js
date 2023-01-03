@@ -5,3 +5,4 @@ export { default as Game } from "./game/Game";
 export { default as SubNavbar } from "./SubNavbar";
 export { default as Sidebar } from "./Sidebar";
 export { default as IconSidebar } from "./IconSidebar";
+export { default as Content } from "./Content";
