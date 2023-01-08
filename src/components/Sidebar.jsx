@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = () => {
   const navigate = useNavigate();
   return (
-    <div className="h-full border border-r-border">
+    <div className="h-full border border-r-border border-y-0 border-l-0">
       <Accordion>
         {/* Details */}
         <AccordionItem className="w-full">
@@ -190,7 +190,7 @@ const Sidebar = () => {
         </AccordionItem>
 
         {/* Contacts */}
-        <AccordionItem className="w-full">
+        <AccordionItem className="w-full" alwaysOpen>
           {({ open }) => (
             <>
               <AccordionHeader className="w-full flex justify-between p-4 border border-x-0 border-t-0 border-b-border">
