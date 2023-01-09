@@ -16,6 +16,7 @@ export const ContentProvider = ({ children }) => {
       {
         userImg: userImg,
         userName: "@codeComet",
+        profileUrl: "https://github.com/codeComet",
         creationDate: "Jun, 2021",
         detailsLink: "https://github.com/codeComet/place-rating-app",
         codeImg: codeImg1,
@@ -24,6 +25,16 @@ export const ContentProvider = ({ children }) => {
       {
         userImg: userImg,
         userName: "@codeComet",
+        profileUrl: "https://github.com/codeComet",
+        creationTime: "Apr, 2022",
+        detailsLink: "https://github.com/codeComet/flight-booking",
+        codeImg: codeImg2,
+        description: "Built with love",
+      },
+      {
+        userImg: userImg,
+        userName: "@codeComet",
+        profileUrl: "https://github.com/codeComet",
         creationTime: "Apr, 2022",
         detailsLink: "https://github.com/codeComet/flight-booking",
         codeImg: codeImg2,
