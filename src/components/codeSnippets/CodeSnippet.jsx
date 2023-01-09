@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { AiFillHeart } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
 const CodeSnippet = ({ item }) => {
   console.log(item);
@@ -16,24 +15,29 @@ const CodeSnippet = ({ item }) => {
             className="w-9 h-9 rounded-full mr-4"
           />
           <div>
-            <Link to={item?.profileUrl}>
+            <a
+              href={item?.profileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-coral"
+            >
               <h3 className="text-label text-blue font-bold">
                 {item?.userName}
               </h3>
-            </Link>
+            </a>
             <p className="text-bodyText text-code">
-              Created at {item?.creationDate}
+              Created at {item?.creationTime}
             </p>
           </div>
         </div>
 
         <div className="flex justify-between items-center mx-2">
-          <Link to={item?.detailsLink}>
+          <a href={item?.detailsLink} target="_blank" rel="noopener noreferrer">
             <div className="flex justify-between items-center mr-3">
               <BiMessageRoundedDetail />
               <p className="ml-2">Details</p>
             </div>
-          </Link>
+          </a>
           <div className="flex justify-between items-center">
             <AiFillHeart className="heart" />
             <p className="text-bodyText font-bold ml-1">5</p>

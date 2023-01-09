@@ -17,7 +17,7 @@ export const ContentProvider = ({ children }) => {
         userImg: userImg,
         userName: "@codeComet",
         profileUrl: "https://github.com/codeComet",
-        creationDate: "Jun, 2021",
+        creationTime: "Jun, 2021",
         detailsLink: "https://github.com/codeComet/place-rating-app",
         codeImg: codeImg1,
         description: "Built with love",
