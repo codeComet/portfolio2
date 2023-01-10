@@ -27,7 +27,7 @@ const CustomCursor = () => {
     width: "400px",
     height: "400px",
     borderRadius: "50% 22% 40% 80%",
-    filter: " blur(100px)",
+    filter: " blur(80px)",
     background: "rgb(255, 67, 75)",
     background: "linear-gradient(#43d9ad, #4d5bce)",
     opacity: 0.4,
@@ -38,27 +38,37 @@ const CustomCursor = () => {
     default: {
       x: mousePosition.x - 200,
       y: mousePosition.y - 200,
+      scale: [1, 1.2, 1.3, 1.2, 1],
+      rotate: [0, 90, 180, 180, 360],
+      borderRadius: ["20%", "20%", "50%", "30%", "20%"],
     },
-  };
-
-  const animate = {
-    scale: [1, 2, 2, 1, 1],
-    rotate: [0, 0, 270, 270, 0],
-    borderRadius: ["20%", "20%", "50%", "50%", "20%"],
   };
 
   return (
     <motion.div
-      className={`fixed top-0 left-0 sm:hidden`}
+      className={`fixed top-0 left-0`}
       style={style}
       variants={variants}
       animate="default"
       transition={{
-        duration: 0.3,
-        ease: "linear",
-        repeat: 0,
-        type: "spring",
-        stiffness: 80,
+        x: {
+          duration: 2.5,
+          ease: "linear",
+          repeat: 0,
+          type: "spring",
+          stiffness: 80,
+        },
+        y: {
+          duration: 2.5,
+          ease: "linear",
+          repeat: 0,
+          type: "spring",
+          stiffness: 80,
+        },
+        default: {
+          duration: 2.5,
+          repeat: Infinity,
+        },
       }}
     ></motion.div>
   );

@@ -11,19 +11,19 @@ import {
 const About = () => {
   return (
     <div className="h-[760px] flex">
-      <div className="flex-auto w-[3.5%]">
+      <div className="flex-auto w-[3.5%] z-10">
         <IconSidebar />
       </div>
-      <div className="flex-auto w-[15.5%]">
+      <div className="flex-auto w-[15.5%] z-10">
         <Sidebar />
       </div>
-      <div className="flex-auto w-[81%] h-full">
+      <div className="flex-auto w-[81%] h-full z-10">
         <SubNavbar />
-        <div className="h-[99%] flex justify-start">
+        <div className="h-[99%] flex justify-start ">
           <div className="basis-2/4 border border-y-0 border-l-0 border-r-border mr-7">
             <Content />
           </div>
-          <div className="basis-2/4 border border-y-0 border-x-border mr-7 p-3 overflow-y-auto">
+          <div className="basis-2/4 border border-y-0 border-x-border mr-7 p-3 overflow-y-auto z-10">
             <CodeSnippets />
           </div>
         </div>

@@ -7,7 +7,7 @@ import About from "./pages/About";
 function App() {
   return (
     <div className="h-full flex flex-col bg-primary">
-      {/* <CustomCursor /> */}
+      <CustomCursor />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
