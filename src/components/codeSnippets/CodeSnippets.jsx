@@ -6,7 +6,7 @@ const CodeSnippets = () => {
   const [content, setContent] = useContext(ContentContext);
 
   return (
-    <div>
+    <div className="h-[72vh]">
       <h2 className="text-bodyText">//Code Snippets Showcase</h2>
 
       {content?.codeSnippets?.map((item, index) => (

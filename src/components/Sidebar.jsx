@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = () => {
   const navigate = useNavigate();
   return (
-    <div className="h-full border border-r-border border-y-0 border-l-0 ">
+    <div className="h-full border border-r-border border-y-0 border-l-0">
       <Accordion>
         {/* Details */}
         <AccordionItem className="w-full">

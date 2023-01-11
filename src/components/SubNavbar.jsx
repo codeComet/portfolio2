@@ -8,7 +8,7 @@ const SubNavbar = () => {
   console.log(child);
   return (
     <div className="w-full border border-t-0 border-l-0 border-border">
-      <div className="w-[13%] flex justify-between items-center p-3 border border-y-0 border-l-0 border-r-border">
+      <div className="w-[18%] flex justify-between items-center p-3 border border-y-0 border-l-0 border-r-border">
         <p className="text-bodyText">
           {child == undefined
             ? `personal-info`

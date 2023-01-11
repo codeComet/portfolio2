@@ -47,6 +47,10 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('./src/assets/bg.png')",
       },
+      gridTemplateColumns: {
+        // Simple 4 column grid
+        16: "4rem 300px 1fr",
+      },
     },
   },
   plugins: [],
