@@ -8,3 +8,6 @@ export { default as IconSidebar } from "./IconSidebar";
 export { default as Content } from "./Content";
 export { default as CodeSnippets } from "./codeSnippets/CodeSnippets";
 export { default as CodeSnippet } from "./codeSnippets/CodeSnippet";
+export { default as Experience } from "./about-me-content/Experience";
+export { default as Education } from "./about-me-content/Education";
+export { default as EduAchievements } from "./about-me-content/EduAchievements";

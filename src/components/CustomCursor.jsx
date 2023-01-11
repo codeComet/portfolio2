@@ -32,6 +32,7 @@ const CustomCursor = () => {
     background: "linear-gradient(#43d9ad, #4d5bce)",
     opacity: 0.4,
     zIndex: 2,
+    mixBlendMode: "difference",
   };
 
   const variants = {

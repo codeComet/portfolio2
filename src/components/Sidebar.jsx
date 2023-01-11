@@ -64,7 +64,7 @@ const Sidebar = () => {
                             )}
                           </div>
 
-                          <FaFolderOpen className="text-coral mx-2" />
+                          <FaFolderOpen className="text-accent  mx-2" />
                           <h3 className={`accordion-title text-white`}>bio</h3>
                         </AccordionHeader>
 
@@ -84,7 +84,7 @@ const Sidebar = () => {
                     )}
                   </AccordionItem>
 
-                  {/* interests */}
+                  {/* experience */}
                   <AccordionItem className="p-3">
                     {({ open }) => (
                       <>
@@ -121,13 +121,20 @@ const Sidebar = () => {
 
                           <FaFolderOpen className="text-green mx-2" />
                           <h3 className={`accordion-title text-white`}>
-                            interests
+                            experience
                           </h3>
                         </AccordionHeader>
 
                         <AccordionBody className="px-3">
-                          <div className="accordion-body text-bodyText">
-                            Lorem ipsum dolor sit amet.
+                          <div
+                            className="accordion-body text-bodyText pl-12 hover:cursor-pointer"
+                            onClick={() =>
+                              navigate({
+                                pathname: "/about/experience",
+                              })
+                            }
+                          >
+                            experience.js
                           </div>
                         </AccordionBody>
                       </>
@@ -176,8 +183,72 @@ const Sidebar = () => {
                         </AccordionHeader>
 
                         <AccordionBody className="px-3">
-                          <div className="accordion-body text-bodyText">
-                            Lorem ipsum dolor sit amet.
+                          <div
+                            className="accordion-body text-bodyText pl-12 hover:cursor-pointer"
+                            onClick={() =>
+                              navigate({
+                                pathname: "/about/education",
+                              })
+                            }
+                          >
+                            education.js
+                          </div>
+                        </AccordionBody>
+                      </>
+                    )}
+                  </AccordionItem>
+
+                  {/* interests */}
+                  <AccordionItem className="p-3">
+                    {({ open }) => (
+                      <>
+                        <AccordionHeader className="p-3 flex items-center">
+                          <div className="mr-2">
+                            {!open ? (
+                              <svg
+                                width="9"
+                                height="14"
+                                viewBox="0 0 9 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5.69658 7.18971L0.746582 2.23971L2.16058 0.82571L8.52458 7.18971L2.16058 13.5537L0.746582 12.1397L5.69658 7.18971Z"
+                                  fill="#607B96"
+                                />
+                              </svg>
+                            ) : (
+                              <svg
+                                width="13"
+                                height="9"
+                                viewBox="0 0 13 9"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M6.364 5.27715L11.314 0.327148L12.728 1.74115L6.364 8.10515L0 1.74115L1.414 0.327148L6.364 5.27715Z"
+                                  fill="#607B96"
+                                />
+                              </svg>
+                            )}
+                          </div>
+
+                          <FaFolderOpen className="text-coral mx-2" />
+                          <h3 className={`accordion-title text-white`}>
+                            interests
+                          </h3>
+                        </AccordionHeader>
+
+                        <AccordionBody className="px-3">
+                          <div
+                            className="accordion-body text-bodyText pl-12 hover:cursor-pointer"
+                            onClick={() =>
+                              navigate({
+                                pathname: "/about/interest",
+                              })
+                            }
+                          >
+                            interests.js
                           </div>
                         </AccordionBody>
                       </>

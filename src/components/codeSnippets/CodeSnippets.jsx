@@ -15,7 +15,6 @@ const CodeSnippets = () => {
         </div>
       ))}
     </div>
-    // test commit
   );
 };
 
