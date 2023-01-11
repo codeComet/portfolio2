@@ -7,8 +7,9 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
-  z-index: 10;
+  /* width: 12px;
+  z-index: 10; */
+  display: none;
 }
 
 *::-webkit-scrollbar-track {

@@ -1,24 +1,68 @@
 import React from "react";
 import EduAchievements from "./EduAchievements";
+import { FaGraduationCap, FaAnchor } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div className="flex">
-      <div className="basis-[62%] border border-y-0 border-l-0 border-r-border mr-7 break-words p-4">
-        Bachelor of Science in Computer Science - XYZ University (20XX-20XX)
-        Relevant coursework: Data Structures, Algorithms, Computer Organization,
-        Software Engineering Final project: Developed a web-based scheduling
-        application using Angular and Firebase.
-        <div></div>
-        Master of Science in Computer Science - XYZ University (20XX-20XX)
-        Relevant coursework: Machine Learning, Advanced Database Systems,
-        Computer Networking, Artificial Intelligence Final project: Designed and
-        implemented a system for personalized movie recommendations using
-        machine learning techniques Continuing Education: Advanced JavaScript
-        Frameworks - XYZ Coding Bootcamp (20XX) Web Design and User Experience -
-        XYZ Professional Development (20XX) Cloud Computing Fundamentals - XYZ
-        e-learning Platform (20XX)
+    <div className="flex h-full">
+      <div className="basis-[62%] border border-y-0 border-l-0 border-r-border mr-7 break-words p-4 text-white">
+        {/* University */}
+        <div>
+          <div className="flex items-center">
+            <FaGraduationCap className="text-white text-subheading mr-3" />
+            <span className="text-coral">
+              Bachelor of Science in Computer Science{" "}
+            </span>
+            <span className="text-blue">
+              &nbsp;- XYZ University (20XX-20XX)
+            </span>
+          </div>
+          <div className="text-bodyText ml-12">
+            <p>
+              <span className="text-green">Relevant coursework: </span>Data
+              Structures, Algorithms, Computer Architecture, Database Designing,
+              System Analysis, Data Communication, Electronics etc.
+            </p>{" "}
+          </div>
+        </div>
+
+        {/* Marine Engineering */}
+        <div className="my-6">
+          <div className="flex items-center">
+            <FaAnchor className="text-white text-subheading mr-3" />
+            <span className="text-coral">Marine Engineering </span>
+            <span className="text-blue">
+              &nbsp;- Shah Marine & Business Institute (20XX-20XX)
+            </span>
+          </div>
+          <div className="text-bodyText ml-12">
+            <p>
+              <span className="text-green">Relevant coursework: </span>Data
+              Structures, Algorithms, Computer Architecture, Database Designing,
+              System Analysis, Data Communication, Electronics etc.
+            </p>{" "}
+          </div>
+        </div>
+
+        {/* College */}
+        <div className="mb-6">
+          <div className="flex items-center">
+            <FaGraduationCap className="text-white text-subheading mr-3" />
+            <span className="text-coral">
+              Higher Secondary School Certificate{" "}
+            </span>
+            <span className="text-blue">
+              &nbsp;- Dhanmondi Ideal College (20XX-20XX)
+            </span>
+          </div>
+          <div className="text-bodyText ml-11">
+            <p>
+              Passed with <span className="text-green">GPA 4.40</span>
+            </p>
+          </div>
+        </div>
       </div>
+
       <div className=" basis-[38%] border border-y-0 border-x-border p-3 overflow-y-scroll">
         <EduAchievements />
       </div>

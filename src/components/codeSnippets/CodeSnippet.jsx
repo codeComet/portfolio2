@@ -46,7 +46,7 @@ const CodeSnippet = ({ item }) => {
       </div>
       {/* Code image */}
       <div>
-        <img src={item?.codeImg} alt="codes" className="max-w-[75%] mx-auto" />
+        <img src={item?.codeImg} alt="codes" className="max-w-[90%] mx-auto" />
       </div>
       {/* Description */}
       <div className="py-4 border border-x-0 border-t-0 border-b-border w-[90%] mx-auto">
